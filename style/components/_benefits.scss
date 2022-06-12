@@ -1,0 +1,65 @@
+.benefits {
+  display: flex;
+}
+.benefits__item {
+  flex: 1;
+  padding: 0 4%;
+  position: relative;
+  &::before {
+    content: url("../../jpg/Comb.png");
+    position: absolute;
+    top: 63px;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+.benefit {
+  text-align: center;
+}
+
+.benefit__image-wrapper {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f2f5f4;
+}
+.benefit__icon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.benefit__image {
+  margin-bottom: 24px;
+}
+.benefit__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 7px;
+}
+.benefits__section {
+  position: relative;
+  &::before {
+    content: url("../../jpg/Rectangle2.png");
+    position: absolute;
+    bottom: -16px;
+    left: 60px;
+  }
+}

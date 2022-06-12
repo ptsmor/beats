@@ -1,0 +1,24 @@
+.btn {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 18px 41px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &--red {
+    color: #ffffff;
+    background: #e01f3d;
+  }
+  &--transparent {
+    background: transparent;
+    color: #ffffff;
+    text-transform: none;
+  }
+  &--big {
+    padding: 21px 41px;
+  }
+}

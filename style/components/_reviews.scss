@@ -1,0 +1,104 @@
+.reviews__display {
+  background: #f8faf9;
+  // background: #E01F3D;
+  padding: 42px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 83px;
+    height: 83px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -61px;
+  }
+}
+.reviews__display-inner {
+  display: flex;
+}
+.reviews__avatar {
+  width: 253px;
+  height: 264px;
+}
+
+.reviews__avatar-img {
+  // object-fit: contain;
+  width: 100%;
+  height: 100%;
+  //     width: 253px;
+  // height: 264px;
+}
+.reviews__content {
+  flex: 1;
+  margin-left: 40px;
+  max-width: 460px;
+  padding-top: 32px;
+}
+.reviews__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 27px;
+}
+.reviews__text {
+  margin-bottom: 38px;
+}
+.reviews__autor {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+.interactive-avatar {
+  width: 86px;
+  height: 86px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  // margin-right: px;
+
+  &--active:hover {
+    border-color: #e01f3d;
+  }
+  &:hover {
+    border-color: #e01f3d;
+  }
+}
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+.interactive-avatar__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reviews__switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__section {
+  position: relative;
+  &::before {
+    content: url("../../jpg/Ellipse1.png");
+    position: absolute;
+    bottom: -25px;
+    left: 80px;
+  }
+}
+// .reviews__switcher-item {
+//     flex: 1;
+//     width: 100%;
+// }

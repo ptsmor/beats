@@ -1,0 +1,20 @@
+.features {
+  display: flex;
+}
+.features__item {
+  margin-right: 28px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.feature {
+  display: flex;
+}
+.feature__icon {
+  width: 41px;
+  margin-right: 11px;
+}
+.feature__text {
+  max-width: 114px;
+  white-space: pre-line;
+}
