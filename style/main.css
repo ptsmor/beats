@@ -113,7 +113,7 @@ img {
   position: relative;
 }
 .hero::after {
-  content: url("../../jpg/Rectangle1.png");
+  content: url("../jpg/Rectangle1.png");
   position: absolute;
   bottom: -23px;
   right: 104px;
@@ -136,7 +136,7 @@ img {
           justify-content: space-between;
   height: 100%;
   padding: 24px 0 65px;
-  background: url("../../jpg/beats1.png") right center/54% auto no-repeat;
+  background: url("../jpg/beats1.png") right center/54% auto no-repeat;
 }
 
 .hero__main-title {
@@ -311,7 +311,7 @@ img {
   position: relative;
 }
 .benefits__item::before {
-  content: url("../../jpg/Comb.png");
+  content: url("../jpg/Comb.png");
   position: absolute;
   top: 63px;
   right: 0;
@@ -367,7 +367,7 @@ img {
   position: relative;
 }
 .benefits__section::before {
-  content: url("../../jpg/Rectangle2.png");
+  content: url("../jpg/Rectangle2.png");
   position: absolute;
   bottom: -16px;
   left: 60px;
@@ -488,7 +488,7 @@ img {
   position: relative;
 }
 .reviews__section::before {
-  content: url("../../jpg/Ellipse1.png");
+  content: url("../jpg/Ellipse1.png");
   position: absolute;
   bottom: -25px;
   left: 80px;
@@ -586,7 +586,7 @@ img {
   border-radius: 4px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("../../jpg/Check.png") center center no-repeat;
+  background: url("../jpg/Check.png") center center no-repeat;
 }
 
 .radio_elem {

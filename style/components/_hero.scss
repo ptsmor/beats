@@ -5,7 +5,7 @@
   position: relative;
 
   &::after {
-    content: url("../../jpg/Rectangle1.png");
+    content: url("../jpg/Rectangle1.png");
     position: absolute;
     bottom: -23px;
     right: 104px;
@@ -21,7 +21,7 @@
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 65px;
-  background: url("../../jpg/beats1.png") right center / 54% auto no-repeat;
+  background: url("../jpg/beats1.png") right center / 54% auto no-repeat;
 }
 .hero__main-title {
   font-weight: bold;
