@@ -113,7 +113,7 @@ img {
   position: relative;
 }
 .hero::after {
-  content: url("../jpg/Rectangle1.png");
+  content: url("../img/Rectangle1.png");
   position: absolute;
   bottom: -23px;
   right: 104px;
@@ -136,7 +136,7 @@ img {
           justify-content: space-between;
   height: 100%;
   padding: 24px 0 65px;
-  background: url("../jpg/beats1.png") right center/54% auto no-repeat;
+  background: url("../img/beats1.png") right center/54% auto no-repeat;
 }
 
 .hero__main-title {
@@ -311,7 +311,7 @@ img {
   position: relative;
 }
 .benefits__item::before {
-  content: url("../jpg/Comb.png");
+  content: url("../img/Comb.png");
   position: absolute;
   top: 63px;
   right: 0;
@@ -367,7 +367,7 @@ img {
   position: relative;
 }
 .benefits__section::before {
-  content: url("../jpg/Rectangle2.png");
+  content: url("../img/Rectangle2.png");
   position: absolute;
   bottom: -16px;
   left: 60px;
@@ -488,14 +488,14 @@ img {
   position: relative;
 }
 .reviews__section::before {
-  content: url("../jpg/Ellipse1.png");
+  content: url("../img/Ellipse1.png");
   position: absolute;
   bottom: -25px;
   left: 80px;
 }
 
 .order-section {
-  background: url("../jpg/form-bg.png") center center no-repeat;
+  background: url("../img/form-bg.png") center center no-repeat;
   color: #fff;
 }
 
@@ -586,7 +586,7 @@ img {
   border-radius: 4px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("../jpg/Check.png") center center no-repeat;
+  background: url("../img/Check.png") center center no-repeat;
 }
 
 .radio_elem {
@@ -620,14 +620,24 @@ img {
 
 .map-section {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .map__container {
   margin: 0 auto;
   width: 100%;
-  height: 100%;
   max-width: 1100px;
   position: relative;
+}
+
+.footer {
+  margin-top: auto;
 }
 
 .footer__container {
@@ -641,6 +651,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   height: 86px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__col {
@@ -705,7 +718,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-image: url(../jpg/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: -60px 0px;
   width: 30px;
   height: 30px;
@@ -720,7 +733,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-image: url(../jpg/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: -60px -30px;
   width: 30px;
   height: 30px;
@@ -746,7 +759,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-image: url(../jpg/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -60px;
   width: 30px;
   height: 30px;
@@ -761,7 +774,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-image: url(../jpg/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: -30px -60px;
   width: 30px;
   height: 30px;
@@ -787,7 +800,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-image: url(../jpg/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px 0px;
   width: 30px;
   height: 30px;
@@ -802,7 +815,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-image: url(../jpg/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: -30px 0px;
   width: 30px;
   height: 30px;
@@ -828,7 +841,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-image: url(../jpg/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -30px;
   width: 30px;
   height: 30px;
@@ -843,7 +856,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-image: url(../jpg/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: -30px -30px;
   width: 30px;
   height: 30px;

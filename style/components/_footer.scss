@@ -3,19 +3,32 @@
 //   }
 .map-section {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   .map__container {
     margin: 0 auto;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     max-width: 1100px;
     position: relative;
+      //  margin-top: auto;
+  }
+  .footer {
+    // margin-left: auto;
+    // margin-right: auto;
+    margin-top: auto;
+
+    // margin-bottom: 0;
   }
   .footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 86px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer__col {
     display: flex;
@@ -60,7 +73,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-image: url(../jpg/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -60px 0px;
     width: 30px;
     height: 30px;
@@ -73,7 +86,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-image: url(../jpg/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -60px -30px;
     width: 30px;
     height: 30px;
@@ -95,7 +108,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-image: url(../jpg/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: 0px -60px;
     width: 30px;
     height: 30px;
@@ -108,7 +121,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-image: url(../jpg/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -30px -60px;
     width: 30px;
     height: 30px;
@@ -131,7 +144,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-image: url(../jpg/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: 0px 0px;
     width: 30px;
     height: 30px;
@@ -144,7 +157,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-image: url(../jpg/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -30px 0px;
     width: 30px;
     height: 30px;
@@ -167,7 +180,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-image: url(../jpg/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: 0px -30px;
     width: 30px;
     height: 30px;
@@ -180,7 +193,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-image: url(../jpg/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -30px -30px;
     width: 30px;
     height: 30px;

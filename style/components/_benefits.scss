@@ -6,7 +6,7 @@
   padding: 0 4%;
   position: relative;
   &::before {
-    content: url("../jpg/Comb.png");
+    content: url("../img/Comb.png");
     position: absolute;
     top: 63px;
     right: 0;
@@ -57,7 +57,7 @@
 .benefits__section {
   position: relative;
   &::before {
-    content: url("../jpg/Rectangle2.png");
+    content: url("../img/Rectangle2.png");
     position: absolute;
     bottom: -16px;
     left: 60px;
