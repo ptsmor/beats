@@ -1,9 +1,16 @@
 $containerWidth: 915px;
 $baseFontSize: 16px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
 //colors
 $red: #e01f3d;
 //z-indexes
 $z-fixed-menu: 100;
+
+@import "./_media.scss";
 
 // normalise
 @import "./layout/normalize.css";
@@ -14,6 +21,7 @@ $z-fixed-menu: 100;
 // components
 @import "./components/_hero.scss";
 @import "./components/_header.scss";
+@import "./components/_hamburger.scss";
 @import "./components/_features.scss";
 @import "./components/_buttons.scss";
 @import "./components/_section.scss";
@@ -25,3 +33,5 @@ $z-fixed-menu: 100;
 @import "./components/_radio.scss";
 @import "./components/_footer.scss";
 @import "./components/_fixed-menu.scss";
+
+

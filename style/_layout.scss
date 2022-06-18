@@ -2,6 +2,13 @@ html {
   font-family: "Play", sans-serif;
   scroll-behavior: smooth;
   font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
 }
 
 body,
@@ -52,7 +59,7 @@ button {
   cursor: pointer;
   font-weight: bold;
   font-size: $baseFontSize;
-  line-height: 18px;
+  line-height: rem(18px);
 }
 a {
   color: inherit;
@@ -72,7 +79,6 @@ img {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  min-width: $containerWidth + 2px;
 }
 .wrapper__content {
   flex: 1;
@@ -85,7 +91,7 @@ img {
 
 .container {
   margin: 0 auto;
-  width: 100%;
+  width: 95%;
   height: 100%;
   max-width: $containerWidth;
   position: relative;

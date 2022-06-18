@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=1150, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beats Solo 3</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,16 +53,24 @@
                 </ul>
               </nav>
               <address class="contacts">
-                <a href="tel:+78009039090" class="contacts-phone">
+                <a href="tel:+78009039090" class="contacts-phone header__contacts-phone">
                   <span class="contacts-phone__icon">
-                    <img
+                    <!-- <img
                       src="./img/vector.svg"
                       alt="contacts-phone__icon-elem"
-                    />
+                    /> -->
+                    <svg class="contacts-phone__icon-elem">
+                      <use xlink:href="./img/sprite.svg#minimobil1"></use>
+                    </svg>
                   </span>
                   <span class="contacts-phone__text">8 800 903 90 90</span>
                 </a>
               </address>
+              <a href="" class="hamburger">
+                <span class="hamburger__plank"></span>
+                <span class="hamburger__plank"></span>
+                <span class="hamburger__plank"></span>
+              </a>
             </header>
             <div class="hero__title-section">
               <h1 class="hero__main-title">
@@ -77,19 +85,28 @@
               <ul class="features">
                 <li class="features__item feature">
                   <div class="feature__icon">
-                    <img src="./img/noise.png" alt="noise icon" />
+                    <!-- <img src="./img/noise.png" alt="noise icon" /> -->
+                    <svg class="future__icon-elem">
+                      <use xlink:href="./img/sprite.svg#noise1"></use>
+                    </svg>
                   </div>
                   <div class="feature__text">Безупречный звук</div>
                 </li>
                 <li class="features__item feature">
                   <div class="feature__icon">
-                    <img src="./img/charging.png" alt="charging icon" />
+                    <!-- <img src="./img/charging.png" alt="charging icon" /> -->
+                    <svg class="future__icon-elem">
+                      <use xlink:href="./img/sprite.svg#batery1"></use>
+                    </svg>
                   </div>
                   <div class="feature__text">До 40 часов работы</div>
                 </li>
                 <li class="features__item feature">
                   <div class="feature__icon">
-                    <img src="./img/plug.png" alt="plug icon" />
+                    <!-- <img src="./img/plug.png" alt="plug icon" /> -->
+                    <svg class="future__icon-elem">
+                      <use xlink:href="./img/sprite.svg#rozetka1"></use>
+                    </svg>
                   </div>
                   <div class="feature__text">Технология Fast Fuel</div>
                 </li>
@@ -113,11 +130,16 @@
               <li class="benefits__item benefit">
                 <div class="benefit__image">
                   <div class="benefit__image-wrapper">
-                    <img
+                    <!-- <img
                       src="./img/batery.png"
                       alt="batery"
                       class="benefit__icon"
-                    />
+                    /> -->
+
+                    <svg class="benefit__icon">
+                      <use xlink:href="./img/sprite.svg#batery2"></use>
+                    </svg>
+
                   </div>
                 </div>
                 <div class="benefit__text">
@@ -133,11 +155,14 @@
               <li class="benefits__item benefit">
                 <div class="benefit__image">
                   <div class="benefit__image-wrapper">
-                    <img
+                    <!-- <img
                       src="./img/volume.png"
                       alt="volume"
                       class="benefit__icon"
-                    />
+                    /> -->
+                    <svg class="benefit__icon">
+                      <use xlink:href="./img/sprite.svg#volume2"></use>
+                    </svg>
                   </div>
                 </div>
                 <div class="benefit__text">
@@ -154,11 +179,14 @@
               <li class="benefits__item benefit">
                 <div class="benefit__image">
                   <div class="benefit__image-wrapper">
-                    <img
+                    <!-- <img
                       src="./img/time.png"
                       alt="time"
                       class="benefit__icon"
-                    />
+                    /> -->
+                    <svg class="benefit__icon">
+                      <use xlink:href="./img/sprite.svg#time2"></use>
+                    </svg>
                   </div>
                 </div>
                 <div class="benefit__text">
@@ -337,10 +365,13 @@
                   <div class="contacts__desc">Москва, ул.Новый Арбат, д.31/12</div>
                   <a href="tel:+78009039090" class="contacts-phone">
                     <span class="contacts-phone__icon">
-                      <img
+                      <!-- <img
                         src="./img/vector.svg"
                         alt="contacts-phone__icon-elem"
-                      />
+                      /> -->
+                      <svg class="contacts-phone__icon-elem">
+                        <use xlink:href="./img/sprite.svg#minimobil1"></use>
+                      </svg>
                     </span>
                     <span class="contacts-phone__text">8 800 903 90 90</span>
                   </a>
@@ -348,16 +379,32 @@
                 <div class="footer__col footer__col--align--right">
                   <ul class="social__list">
                     <li class="social__item">
-                      <a href="" class="social__link social__link--vk "></a>
+                      <a href="" class="social__link social__link--vk ">
+                        <svg class="social__link-elem">
+                          <use xlink:href="./img/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="social__item">
-                      <a href="" class="social__link social__link--fb "></a>
+                      <a href="" class="social__link social__link--fb ">
+                        <svg class="social__link-elem">
+                          <use xlink:href="./img/sprite.svg#fb"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="social__item">
-                      <a href="" class="social__link social__link--ins "></a>
+                      <a href="" class="social__link social__link--ins ">
+                        <svg class="social__link-elem">
+                          <use xlink:href="./img/sprite.svg#ins"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="social__item">
-                      <a href="" class="social__link social__link--tel "></a>
+                      <a href="" class="social__link social__link--tel ">
+                        <svg class="social__link-elem">
+                          <use xlink:href="./img/sprite.svg#tg"></use>
+                        </svg>
+                      </a>
                     </li>
                   </ul>
                 </div>

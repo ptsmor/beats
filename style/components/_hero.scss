@@ -1,39 +1,91 @@
 .hero {
   background-color: #f5f5f5;
   height: 100vh;
-  min-height: 652px;
+  min-height: rem(652px);
   position: relative;
+
+ 
 
   &::after {
     content: url("../img/Rectangle1.png");
     position: absolute;
-    bottom: -23px;
-    right: 104px;
+    bottom: rem(-23px);
+    right: rem(104px);
   }
 }
 
 .hero__title-section {
   width: 46%;
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::before {
+      content: "";
+      width: rem(320px);
+      height: rem(320px);
+      background: url("../img/beats1table.png") center center / contain no-repeat;
+      margin-bottom: rem(64px);
+    }
+  }
+
 }
 .hero__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 65px;
+  padding: rem(24px) 0 rem(65px);
   background: url("../img/beats1.png") right center / 54% auto no-repeat;
+
+  @include tablets {
+    background: none;
+  }
 }
 .hero__main-title {
   font-weight: bold;
-  font-size: 48px;
-  line-height: 52px;
-  margin-bottom: 23px;
+  font-size: rem(48px);
+  line-height: rem(52px);
+  margin-bottom: rem(23px);
   text-transform: uppercase;
+
+  @include tablets {
+    padding: 0 8%;
+    margin-bottom: rem(0px);
+  }
+  @include phones {
+    font-size: rem(32px);
+    line-height: rem(36px);
+    margin-bottom: rem(14px);
+    line-height: 36px;
+    padding: 0 12%;
+    margin-bottom: 0;
+  }
 }
 .hero__title-desc {
   font-family: "Alegreya Sans";
-  font-size: 21px;
-  line-height: 25px;
+  font-size: rem(21px);
+  line-height: rem(25px);
   white-space: pre-line;
-  margin-bottom: 55px;
+  margin-bottom: rem(55px);
+
+  @include tablets {
+    padding: 0 25%;
+    margin-bottom: rem(25px);
+  }
+  @include phones {
+    font-size: rem(18px);
+    line-height: rem(20px);
+    padding: 0 22%;
+  }
+}
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
 }

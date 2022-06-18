@@ -1,13 +1,20 @@
 .btn {
   font-weight: bold;
-  font-size: 16px;
-  padding: 18px 41px;
+  font-size: rem(16px);
+  padding: rem(18px) rem(41px);
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: rem(100px);
   line-height: 1;
   text-decoration: none;
   border: none;
   cursor: pointer;
+
+  @include tablets {
+    padding: rem(21px) rem(41px);
+  }
+  @include phones {
+    padding: rem(21px) rem(36px);
+  }
 
   &--red {
     color: #ffffff;
@@ -17,8 +24,11 @@
     background: transparent;
     color: #ffffff;
     text-transform: none;
+    @include tablets {
+      color: #E01F3D;
+    }
   }
   &--big {
-    padding: 21px 41px;
+    padding: rem(21px) rem(41px);
   }
 }

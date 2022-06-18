@@ -5,7 +5,7 @@
   z-index: $z-fixed-menu;
 }
 .fixed-menu__item {
-  margin-bottom: 3px;
+  margin-bottom: rem(3px);
   &--active:hover {
     .fixed-menu__link {
       border-color: #e01f3d;
@@ -24,17 +24,17 @@
   }
 }
 .fixed-menu__link {
-  width: 18px;
-  height: 18px;
+  width: rem(18px);
+  height: rem(18px);
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: rem(1px) solid transparent;
   display: block;
   position: relative;
   &::before {
     content: "";
     display: block;
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
     background: #292929;
     position: absolute;

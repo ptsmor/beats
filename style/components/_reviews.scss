@@ -1,62 +1,75 @@
 .reviews__display {
   background: #f8faf9;
   // background: #E01F3D;
-  padding: 42px;
-  margin-bottom: 10px;
+  padding: rem(42px);
+  margin-bottom: rem(10px);
   overflow: hidden;
   position: relative;
   &::before {
     content: "";
     display: block;
-    width: 83px;
-    height: 83px;
+    width: rem(83px);
+    height: rem(83px);
     background: #fff;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -61px;
+    top: rem(-61px);
   }
 }
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 .reviews__avatar {
-  width: 253px;
-  height: 264px;
+  width: rem(253px);
+  height: rem(264px);
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+  }
 }
 
 .reviews__avatar-img {
   // object-fit: contain;
   width: 100%;
   height: 100%;
-  //     width: 253px;
-  // height: 264px;
+  //     width: rem(253px);
+  // height: rem(264px);
 }
 .reviews__content {
   flex: 1;
-  margin-left: 40px;
-  max-width: 460px;
-  padding-top: 32px;
+  margin-left: rem(40px);
+  max-width: rem(460px);
+  padding-top: rem(32px);
+  @include tablets {
+    margin-left: 0;
+  }
 }
 .reviews__title {
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 27px;
+  font-size: rem(24px);
+  line-height: rem(28px);
+  margin-bottom: rem(27px);
 }
 .reviews__text {
-  margin-bottom: 38px;
+  margin-bottom: rem(38px);
 }
 .reviews__autor {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: rem(18px);
+  line-height: rem(21px);
 }
 .interactive-avatar {
-  width: 86px;
-  height: 86px;
-  border: 6px solid transparent;
+  width: rem(86px);
+  height: rem(86px);
+  border: rem(6px) solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -94,8 +107,8 @@
   &::before {
     content: url("../img/Ellipse1.png");
     position: absolute;
-    bottom: -25px;
-    left: 80px;
+    bottom: rem(-25px);
+    left: rem(80px);
   }
 }
 // .reviews__switcher-item {
