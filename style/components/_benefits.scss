@@ -14,7 +14,6 @@
     margin-bottom: rem(31px);
   }
 
-  
   &::before {
     content: url("../img/Comb.png");
     position: absolute;
@@ -47,15 +46,6 @@
   }
 }
 
-.benefit__image-wrapper {
-  display: inline-block;
-  width: rem(128px);
-  height: rem(128px);
-  position: relative;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #f2f5f4;
-}
 .benefit__icon {
   width: rem(60px);
   height: rem(60px);
@@ -69,6 +59,15 @@
   @include phones {
     margin-bottom: 0;
     margin-right: rem(12px);
+  }
+  &-wrapper {
+    display: inline-block;
+    width: rem(128px);
+    height: rem(128px);
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f2f5f4;
   }
 }
 .benefit__title {
@@ -92,5 +91,5 @@
 .benefit__text {
   @include phones {
     padding-right: 8%;
-    }
+  }
 }
