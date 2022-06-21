@@ -3,6 +3,7 @@ html {
   scroll-behavior: smooth;
   font-size: $baseFontSize;
 
+
   @include tablets {
     font-size: $baseFontSize - 1px;
   }
@@ -91,6 +92,7 @@ img {
   height: 100%;
   max-width: $containerWidth;
   position: relative;
+  min-height: rem(870px);
 }
 
 

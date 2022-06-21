@@ -106,12 +106,13 @@ img {
   height: 100%;
   max-width: 915px;
   position: relative;
+  min-height: 54.375rem;
 }
 
 .hero {
   background-color: #f5f5f5;
   height: 100vh;
-  min-height: 40.75rem;
+  min-height: 49.375rem;
   position: relative;
 }
 .hero::after {
@@ -439,7 +440,7 @@ img {
 
 .section {
   height: 100vh;
-  min-height: 40.75rem;
+  min-height: 62.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,7 +937,7 @@ img {
 
 .map-section {
   overflow: hidden;
-  min-height: 100%;
+  min-height: 46.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -944,21 +945,21 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100vh;
+}
+@media screen and (max-width: 768px) {
+  .map-section {
+    min-height: 39.5625rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .map-section {
+    min-height: 39.5625rem;
+  }
 }
 
 .map__container {
   margin: 0 auto;
-  height: calc(100vh - 5.375rem);
-}
-@media screen and (max-width: 768px) {
-  .map__container {
-    height: calc(100vh - 6.6875rem);
-  }
-}
-@media screen and (max-width: 480px) {
-  .map__container {
-    height: calc(100vh - 9.4375rem);
-  }
 }
 
 .footer {

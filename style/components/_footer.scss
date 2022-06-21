@@ -14,6 +14,15 @@
 }
 .map__container {
   margin: 0 auto;
+  // height: calc(100vh - rem(86px));
+
+  // @include tablets {
+  //   height: calc(100vh - rem(107px));
+  // }
+
+  // @include phones {
+  //   height: calc(100vh - rem(151px));
+  // }
 }
 .footer {
   margin-top: auto;
