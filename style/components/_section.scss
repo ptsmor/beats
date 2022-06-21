@@ -1,13 +1,9 @@
 .section {
   height: 100vh;
-  // min-height: rem(800px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: rem(101px);
-  // @include phones {
-  //   min-height: rem(980px);
-  // }
 }
 .section__title {
   font-weight: bold;
