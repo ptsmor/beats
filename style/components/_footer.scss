@@ -1,20 +1,19 @@
 .map-section {
   overflow: hidden;
-  min-height: 100%;
+  min-height: rem(738px);
   display: flex;
   flex-direction: column;
-}
-.map__container {
-  margin: 0 auto;
-  height: calc(100vh - rem(86px));
-
-  @include tablets {
-    height: calc(100vh - rem(107px));
+  height: 100vh;
+   @include tablets {
+    min-height: rem(633px);
   }
 
   @include phones {
-    height: calc(100vh - rem(151px));
+    min-height: rem(633px);
   }
+}
+.map__container {
+  margin: 0 auto;
 }
 .footer {
   margin-top: auto;
