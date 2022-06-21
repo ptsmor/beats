@@ -101,6 +101,13 @@
 }
 .reviews__section {
   position: relative;
+  min-height: rem(670px);
+  @include tablets {
+    min-height: rem(770px);
+  }
+  @include phones {
+    min-height: rem(790px);
+  }
   &::before {
     content: url("../img/Ellipse1.png");
     position: absolute;
