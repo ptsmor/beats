@@ -5,27 +5,19 @@
   flex-direction: column;
   height: 100vh;
    @include tablets {
-    min-height: rem(633px);
+    min-height: rem(580px);
   }
 
   @include phones {
-    min-height: rem(633px);
+    min-height: rem(450px);
   }
 }
 .map__container {
-  margin: 0 auto;
-  // height: calc(100vh - rem(86px));
+  margin: auto auto 0  auto;
 
-  // @include tablets {
-  //   height: calc(100vh - rem(107px));
-  // }
-
-  // @include phones {
-  //   height: calc(100vh - rem(151px));
-  // }
 }
 .footer {
-  margin-top: auto;
+
   &__container {
     display: flex;
     justify-content: space-between;

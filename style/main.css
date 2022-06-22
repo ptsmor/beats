@@ -990,22 +990,19 @@ img {
 }
 @media screen and (max-width: 768px) {
   .map-section {
-    min-height: 39.5625rem;
+    min-height: 36.25rem;
   }
 }
 @media screen and (max-width: 480px) {
   .map-section {
-    min-height: 39.5625rem;
+    min-height: 28.125rem;
   }
 }
 
 .map__container {
-  margin: 0 auto;
+  margin: auto auto 0 auto;
 }
 
-.footer {
-  margin-top: auto;
-}
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
