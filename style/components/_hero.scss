@@ -5,11 +5,11 @@
   position: relative;
 
   @include tablets {
-    min-height: rem(780px);
+    min-height: rem(790px);
   }
 
   @include phones {
-    min-height: rem(740px);
+    min-height: rem(780px);
   }
   &::after {
     content: url("../img/Rectangle1.png");
@@ -58,6 +58,10 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  @include tablets {
+    padding-top: rem(100px);
+  }
+  
 }
 .hero__main-title {
   font-weight: bold;
