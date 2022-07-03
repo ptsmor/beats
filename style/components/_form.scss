@@ -55,6 +55,9 @@
     outline: none;
   }
 }
+.input-error {
+  border-color: red;
+}
 .form__input--textarea {
   margin-bottom: rem(20px);
 }

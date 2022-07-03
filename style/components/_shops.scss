@@ -3,7 +3,7 @@
     min-height: rem(750px);
     background: #F8FAF9;
     @include tablets {
-        min-height: rem(770px);
+        min-height: rem(780px);
     }
     @include phones {
         min-height: rem(810px);
@@ -20,12 +20,17 @@
   position: relative;
 }
 
+.bx-wrapper{
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
 .shop__controls{
     display: block;
     position: relative;
-    top: 25%;
+    top: 30%;
     @include tablets {
-        top: 15%;
+        top: 20%;
         right: 5%;
     }
     @include phones {
@@ -35,7 +40,7 @@
 
 .shop__btn{
     position: absolute;
-    
+    z-index: 10;
 
     &_right{
         right: -5%;
@@ -49,7 +54,7 @@
         }
     }
     &_left{
-        left:rem(-33px);
+        left:rem(-53px);
         transform: rotate(360deg);
         @include tablets {
             left: 17%;
@@ -158,6 +163,10 @@
     }
     &__row{
         margin: rem(8px) 0 rem(27px) 0;
+        flex-wrap: wrap;
+        @include tablets {
+            flex-wrap: nowrap;
+        }
     }
     &__purchase{
         display: flex;
@@ -171,6 +180,10 @@
         line-height: 60px;
         color: #151515;
         margin-right: rem(53px);
+        margin-bottom: rem(10px);
+        @include tablets {
+            margin-bottom: 0;
+        }
     }
 }
 
