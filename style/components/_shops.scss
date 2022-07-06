@@ -1,246 +1,242 @@
 .shop__section {
-    position: relative;
-    min-height: rem(750px);
-    background: #F8FAF9;
-    @include tablets {
-        min-height: rem(780px);
-    }
-    @include phones {
-        min-height: rem(810px);
-    }
-    &::after {
-        content: url("../img/Rectangle13.png");
-        position: absolute;
-        bottom: rem(-23px);
-        right: rem(104px);
-      }
+  position: relative;
+  min-height: rem(750px);
+  background: #f8faf9;
+  @include tablets {
+    min-height: rem(780px);
+  }
+  @include phones {
+    min-height: rem(810px);
+  }
+  &::after {
+    content: url("../img/Rectangle13.png");
+    position: absolute;
+    bottom: rem(-23px);
+    right: rem(104px);
+  }
 }
 
 .shop__item {
   position: relative;
 }
 
-.bx-wrapper{
-    border: 0;
-    background: transparent;
-    box-shadow: none;
+.bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
-.shop__controls{
-    display: block;
-    position: relative;
-    top: 30%;
+.shop__controls {
+  display: block;
+  position: relative;
+  top: 30%;
+  @include tablets {
+    top: 20%;
+    right: 5%;
+  }
+  @include phones {
+    top: 15%;
+  }
+}
+
+.shop__btn {
+  position: absolute;
+  z-index: 10;
+
+  &_right {
+    right: -5%;
+    transform: rotate(180deg);
     @include tablets {
-        top: 20%;
-        right: 5%;
+      right: 8%;
+    }
+
+    @include phones {
+      right: 0%;
+    }
+  }
+  &_left {
+    left: rem(-53px);
+    transform: rotate(360deg);
+    @include tablets {
+      left: 17%;
     }
     @include phones {
-        top: 15%;
+      left: 10%;
     }
-}
-
-.shop__btn{
-    position: absolute;
-    z-index: 10;
-
-    &_right{
-        right: -5%;
-        transform: rotate(180deg);
-        @include tablets {
-            right: 8%;
-        }
-       
-        @include phones {
-            right: 0%;
-        }
-    }
-    &_left{
-        left:rem(-53px);
-        transform: rotate(360deg);
-        @include tablets {
-            left: 17%;
-        }       
-        @include phones {
-            left: 10%;
-        }
-    }
+  }
 }
 
 .shop {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  @include tablets {
+    flex-direction: column;
+  }
+
+  &__picture {
+    margin-right: rem(10px);
+    position: relative;
+    width: rem(452px);
+    height: rem(452px);
+    @include tablets {
+      width: rem(306px);
+      height: rem(306px);
+      margin: 0 auto;
+    }
+    @include phones {
+      width: 64%;
+      height: auto;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    width: rem(91px);
+    height: (91px);
+    background-color: #9a9a9a;
+    border-radius: 4px;
+    margin-bottom: rem(25px);
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &__icon--gear {
+    width: 50%;
+    fill: white;
+  }
+  &__icon-elem {
+    width: rem(24px);
+    height: rem(40px);
+  }
+  &__column {
+    width: 50%;
+    flex-direction: column;
+    align-content: space-between;
+    @include tablets {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: rem(50px);
+      padding-top: rem(49px);
+    }
+  }
+
+  &__title {
+    max-width: rem(419px);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-size: rem(36px);
+    line-height: rem(42px);
+    margin-bottom: rem(24px);
+    @include tablets {
+      max-width: 100%;
+      text-align: center;
+      font-size: rem(28px);
+      line-height: rem(32px);
+    }
+    @include phones {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  &__description {
     display: flex;
     flex-direction: row;
-    position: relative;
-    @include tablets{
-        flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: rem(27px);
+    @include tablets {
+      width: 47%;
     }
+  }
+  &__row {
+    margin: rem(8px) 0 rem(27px) 0;
+    flex-wrap: wrap;
+    @include tablets {
+      flex-wrap: nowrap;
+    }
+  }
+  &__purchase {
+    display: flex;
+    align-items: center;
+  }
 
-    &__picture{
-        margin-right: rem(10px);
-        position: relative;
-        width: rem(452px);
-        height: rem(452px);
-        @include tablets{
-            width: rem(306px);
-            height: rem(306px);
-            margin: 0 auto;
-        }
-        @include phones {
-            width: 64%;
-            height: auto;
-        }
-
+  &__price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 60px;
+    color: #151515;
+    margin-right: rem(53px);
+    margin-bottom: rem(10px);
+    @include tablets {
+      margin-bottom: 0;
     }
-
-    &__menu{
-
-        display: flex;
-        justify-content: center;
-        width: rem(91px);
-        height: (91px);
-        background-color: #9A9A9A;
-        border-radius: 4px;
-        margin-bottom: rem(25px);
-        
-        @include tablets{
-            display: none;
-        }
-
-    }
-
-    &__icon--gear{
-        width: 50%;
-        fill: white;
-    }
-    &__icon-elem {
-        width: rem(24px);
-        height: rem(40px);
-    }
-    &__column{
-        width: 50%;
-        flex-direction: column;
-        align-content: space-between;
-        @include tablets{
-            width: 100%;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-bottom: rem(50px);
-            padding-top: rem(49px);
-        }
-    }
-
-    &__title{
-        max-width: rem(419px);
-        text-transform: uppercase;
-        font-weight: bold;
-        color: black;
-        font-size: rem(36px);
-        line-height: rem(42px);
-        margin-bottom: rem(24px);
-        @include tablets{
-            max-width: 100%;
-            text-align: center;
-            font-size: rem(28px);
-            line-height: rem(32px);
-            
-        }
-        @include phones {
-            font-size: 28px;
-            line-height: 32px;
-        }
-    }
-
-    &__description{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin-bottom: rem(27px);
-        @include tablets {
-            width: 47%;
-        }
-    }
-    &__row{
-        margin: rem(8px) 0 rem(27px) 0;
-        flex-wrap: wrap;
-        @include tablets {
-            flex-wrap: nowrap;
-        }
-    }
-    &__purchase{
-        display: flex;
-        align-items: center;
-    }
-
-    &__price{
-        font-style: normal;
-        font-weight: normal;
-        font-size: 36px;
-        line-height: 60px;
-        color: #151515;
-        margin-right: rem(53px);
-        margin-bottom: rem(10px);
-        @include tablets {
-            margin-bottom: 0;
-        }
-    }
+  }
 }
 
 .description {
-    width: 50%;   
+  width: 50%;
 }
 
-.description__title{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color:#666666;
-} 
-
-.decsription__text{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    color: #000;
+.description__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
 }
 
-.gear{
-    position: relative;
-    &:hover {
-        .gear__list {
-            left: 100%;
-            opacity: 1;
-        }
-    }
+.decsription__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+}
+
+.gear {
+  position: relative;
+  &:hover {
     .gear__list {
-        position: absolute;
-        top: 0;
-        left: -9999px;
-        opacity: 0;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 15px 27px 30px 12px;
-        transition: opacity 0.3s;
-        backdrop-filter: blur(4px);
-        box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
-        border-radius: 4px;
+      left: 100%;
+      opacity: 1;
     }
-    .gear__item{
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-    .gear__icon{
-        width: 32px;
-        height: 32px;
-        margin-right: 12px;
-    }
-    .gear__text {
-        min-width: 130px;
-    }
-    .gear__number {
-        margin-left: auto;
-    }
+  }
+  .gear__list {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px 27px 30px 12px;
+    transition: opacity 0.3s;
+    backdrop-filter: blur(4px);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+  }
+  .gear__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .gear__icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+  }
+  .gear__text {
+    min-width: 130px;
+  }
+  .gear__number {
+    margin-left: auto;
+  }
 }
