@@ -9,6 +9,10 @@
 }
 .team__container {
     max-width: rem(940px);
+    margin-bottom: rem(200px);
+    @include tablets{
+        margin-bottom: rem(100px);
+    }
 }
 
 .slider__pic {
@@ -25,6 +29,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    
     @include tablets {
         flex-direction: column;
         width: 100%;
