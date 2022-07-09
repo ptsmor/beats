@@ -6,7 +6,7 @@
     min-height: rem(780px);
   }
   @include phones {
-    min-height: rem(810px);
+    min-height: rem(980px);
   }
   &::after {
     content: url("../img/Rectangle13.png");
@@ -30,11 +30,11 @@
   position: relative;
   top: 30%;
   @include tablets {
-    top: 20%;
+    top: 130px;
     right: 5%;
   }
   @include phones {
-    top: 15%;
+    top: rem(130px);
   }
 }
 

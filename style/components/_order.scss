@@ -9,3 +9,11 @@
   }
   color: #fff;
 }
+.container--order {
+  @include tablets {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+}

@@ -117,7 +117,7 @@
 }
 .reviews__section {
   position: relative;
-  min-height: rem(670px);
+  min-height: rem(700px);
   @include tablets {
     min-height: rem(800px);
   }
@@ -131,4 +131,12 @@
     bottom: rem(-25px);
     left: rem(80px);
   }
+}
+.container--reviews {
+  @include tablets {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+  }
+
 }

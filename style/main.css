@@ -11,7 +11,7 @@ html {
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 14px;
+    font-size: 2.91666vmin;
   }
 }
 
@@ -120,12 +120,12 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    min-height: 49.375rem;
+    min-height: 55rem;
   }
 }
 @media screen and (max-width: 480px) {
   .hero {
-    min-height: 48.75rem;
+    min-height: 53.125rem;
   }
 }
 .hero::after {
@@ -152,13 +152,14 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    margin-bottom: 0;
   }
   .hero__title-section::before {
     content: "";
@@ -228,7 +229,7 @@ img {
     line-height: 2.25rem;
     margin-bottom: 0.875rem;
     line-height: 36px;
-    padding: 0 12%;
+    padding: 0 8%;
     margin-bottom: 0;
   }
 }
@@ -719,6 +720,21 @@ img {
   z-index: 10;
 }
 
+@media screen and (max-width: 768px) {
+  .container--benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .benefit__text {
     padding-right: 8%;
@@ -876,7 +892,7 @@ img {
 
 .reviews__section {
   position: relative;
-  min-height: 41.875rem;
+  min-height: 43.75rem;
 }
 @media screen and (max-width: 768px) {
   .reviews__section {
@@ -896,6 +912,21 @@ img {
   left: 5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .container--reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .order-section {
   background: url("../img/form-bg.png") center center no-repeat;
   min-height: 40.625rem;
@@ -909,6 +940,21 @@ img {
 @media screen and (max-width: 480px) {
   .order-section {
     min-height: 49.375rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container--order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1359,7 +1405,7 @@ img {
 .shop__section {
   position: relative;
   min-height: 46.875rem;
-  background: #F8FAF9;
+  background: #f8faf9;
 }
 @media screen and (max-width: 768px) {
   .shop__section {
@@ -1368,7 +1414,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .shop__section {
-    min-height: 50.625rem;
+    min-height: 61.25rem;
   }
 }
 .shop__section::after {
@@ -1396,13 +1442,13 @@ img {
 }
 @media screen and (max-width: 768px) {
   .shop__controls {
-    top: 20%;
+    top: 130px;
     right: 5%;
   }
 }
 @media screen and (max-width: 480px) {
   .shop__controls {
-    top: 15%;
+    top: 8.125rem;
   }
 }
 
@@ -1487,7 +1533,7 @@ img {
           justify-content: center;
   width: 5.6875rem;
   height: 91px;
-  background-color: #9A9A9A;
+  background-color: #9a9a9a;
   border-radius: 4px;
   margin-bottom: 1.5625rem;
 }
@@ -1842,7 +1888,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .slider__description--wrap {
-    height: 18.75rem;
+    height: 20.625rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1911,7 +1957,7 @@ img {
   font-size: 48px;
   line-height: 52px;
   text-align: start;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media screen and (max-width: 480px) {
   .products__title {
@@ -2005,7 +2051,7 @@ img {
 .product__text {
   padding: 1.9375rem 2.375rem;
   opacity: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -2013,7 +2059,7 @@ img {
 
 .video__section {
   position: relative;
-  background: #F8FAF9;
+  background: #f8faf9;
   min-height: 43.75rem;
 }
 @media screen and (max-width: 480px) {

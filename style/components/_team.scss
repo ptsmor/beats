@@ -70,6 +70,7 @@
     margin: 0 auto;
     width: rem(220px);
   }
+
 }
 .slider__name {
   display: block;
@@ -117,7 +118,7 @@
       height: rem(410px);
     }
     @include phones {
-      height: rem(300px);
+      height: rem(330px);
     }
   }
   @include tablets {

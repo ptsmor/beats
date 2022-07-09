@@ -97,6 +97,14 @@
     z-index: 10;
   }
 }
+.container--benefits {
+  @include tablets {
+    display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  }
+
+}
 .benefit__text {
   @include phones {
     padding-right: 8%;
