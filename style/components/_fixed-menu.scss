@@ -9,7 +9,7 @@
 }
 .fixed-menu__item {
   margin-bottom: rem(3px);
-  &--active:hover {
+  &--active {
     .fixed-menu__link {
       border-color: #e01f3d;
       &::before {

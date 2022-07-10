@@ -2,6 +2,7 @@
   display: block;
   z-index: 10000;
   transition: 0.7s;
+  
 }
 .hamburger {
   width: rem(26px);
@@ -24,6 +25,9 @@
   &--active {
     width: 20px;
     height: 20px;
+    margin-top: rem(6px);
+    flex-direction: column;
+    justify-content: space-between;
     .hamburger__plank {
       background-color: white;
       transform: scale(0);
@@ -65,10 +69,11 @@
       align-items: center;
     }
 
-    &__link {
+    .fullscreen-menu__link {
       color: white;
       font-size: rem(36px);
       line-height: rem(72px);
+      white-space: nowrap;
     }
   }
 
@@ -82,3 +87,4 @@
     margin-bottom: 0;
   }
 }
+

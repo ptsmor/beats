@@ -1,5 +1,5 @@
 .team__section {
-  min-height: rem(975px);
+  min-height: rem(875px);
   @include tablets {
     min-height: rem(760px);
   }
@@ -56,7 +56,7 @@
 .slider__item {
   text-align: center;
   margin-right: rem(20px);
-  margin-bottom: rem(80px);
+  margin-bottom: rem(60px);
   width: rem(220px);
   position: relative;
 

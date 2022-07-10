@@ -87,7 +87,7 @@ img {
 
 .wrapper {
   overflow: hidden;
-  min-height: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,6 +102,14 @@ img {
       -ms-flex: 1;
           flex: 1;
   position: relative;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .container {
@@ -395,6 +403,14 @@ img {
 .hamburger--active {
   width: 20px;
   height: 20px;
+  margin-top: 0.375rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .hamburger--active .hamburger__plank {
   background-color: white;
@@ -456,10 +472,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-.fullscreen-menu .menu__link {
+.fullscreen-menu .menu .fullscreen-menu__link {
   color: white;
   font-size: 2.25rem;
   line-height: 4.5rem;
+  white-space: nowrap;
 }
 .fullscreen-menu--open {
   display: -webkit-box;
@@ -1367,10 +1384,10 @@ img {
 .fixed-menu__item {
   margin-bottom: 0.1875rem;
 }
-.fixed-menu__item--active:hover .fixed-menu__link {
+.fixed-menu__item--active .fixed-menu__link {
   border-color: #e01f3d;
 }
-.fixed-menu__item--active:hover .fixed-menu__link::before {
+.fixed-menu__item--active .fixed-menu__link::before {
   background: #e01f3d;
 }
 .fixed-menu__item:hover .fixed-menu__link {
@@ -1414,7 +1431,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .shop__section {
-    min-height: 61.25rem;
+    min-height: 48.75rem;
   }
 }
 .shop__section::after {
@@ -1720,7 +1737,7 @@ img {
 }
 
 .team__section {
-  min-height: 60.9375rem;
+  min-height: 54.6875rem;
 }
 @media screen and (max-width: 768px) {
   .team__section {
@@ -1813,7 +1830,7 @@ img {
 .slider__item {
   text-align: center;
   margin-right: 1.25rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3.75rem;
   width: 13.75rem;
   position: relative;
 }
@@ -1941,7 +1958,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .products__section {
-    min-height: 53.125rem;
+    min-height: 46.875rem;
   }
 }
 

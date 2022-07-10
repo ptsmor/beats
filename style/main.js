@@ -11,11 +11,23 @@ let body = document.querySelector('body');
     // body.classList.toggle('body-active-menu');
 // };
 
-button.addEventListener('click', clickMenu => {
-    clickMenu.preventDefault();
+// button.addEventListener('click', clickMenu => {
+//     clickMenu.preventDefault();
+//     button.classList.toggle('hamburger__container--active');
+//     hamburger.classList.toggle('hamburger--active')
+//     menu.classList.toggle('fullscreen-menu--open');
+//     body.classList.toggle('body-active-menu');
+//     // $('.menu__link').on('click', clickMenu);
+// });   
+// $('.menu__link').on('click', clickMenu);
+
+let toggleMenu = function(e) {
+    e.preventDefault();
     button.classList.toggle('hamburger__container--active');
     hamburger.classList.toggle('hamburger--active')
     menu.classList.toggle('fullscreen-menu--open');
     body.classList.toggle('body-active-menu');
-});   
-// $('.menu__link').on('click', clickMenu);
+}
+
+button.addEventListener('click', toggleMenu);   
+$('.fullscreen-menu__link').on('click', toggleMenu);

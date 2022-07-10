@@ -6,7 +6,7 @@
     min-height: rem(780px);
   }
   @include phones {
-    min-height: rem(980px);
+    min-height: rem(780px);
   }
   &::after {
     content: url("../img/Rectangle13.png");
