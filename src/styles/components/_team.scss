@@ -1,0 +1,150 @@
+.team__section {
+  min-height: rem(875px);
+  @include tablets {
+    min-height: rem(760px);
+  }
+  @include phones {
+    min-height: rem(585px);
+  }
+}
+.team__container {
+  max-width: rem(940px);
+  margin-bottom: rem(200px);
+  @include tablets {
+    margin-bottom: rem(100px);
+  }
+}
+
+.slider__pic {
+  margin-bottom: rem(25px);
+
+  @include phones {
+    width: rem(138px);
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
+}
+.slider__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include tablets {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+.slider__list--desktop {
+  @include tablets {
+    display: none;
+  }
+  @include phones {
+    display: none;
+  }
+}
+.slider__list--mobile {
+  display: none;
+  @include tablets {
+    display: flex;
+  }
+  @include phones {
+    display: flex;
+  }
+}
+.slider__item {
+  text-align: center;
+  margin-right: rem(20px);
+  margin-bottom: rem(60px);
+  width: rem(220px);
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+    @include tablets {
+      margin: 0 auto;
+    }
+  }
+  @include tablets {
+    margin: 0 auto;
+    width: rem(220px);
+  }
+
+}
+.slider__name {
+  display: block;
+  margin: 0 auto;
+  color: #292929;
+  font-style: normal;
+  font-weight: bold;
+  font-size: rem(18px);
+  line-height: rem(21px);
+  position: relative;
+  margin-bottom: rem(11px);
+  border: none;
+  background: none;
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    content: "";
+    width: 0;
+    height: 0;
+    transition: 0.3s border-top ease-in-out;
+    border-top: rem(8px) solid red;
+    border-right: rem(4px) solid transparent;
+    border-bottom: rem(0px) solid red;
+    border-left: rem(4px) solid transparent;
+  }
+  @include tablets {
+    font-size: rem(21px);
+    line-height: rem(25px);
+  }
+}
+.slider__description {
+  overflow: hidden;
+  height: 0;
+  transition: 0.7s;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+
+  &--wrap {
+    height: rem(100px);
+    @include tablets {
+      height: rem(410px);
+    }
+    @include phones {
+      height: rem(330px);
+    }
+  }
+  @include tablets {
+    position: relative;
+    top: initial;
+    left: initial;
+  }
+}
+.slider__work {
+  color: #292929;
+
+  @include tablets {
+    font-size: rem(21px);
+    line-height: rem(25px);
+    display: block;
+    margin-bottom: rem(12px);
+  }
+}
+.slider__competence {
+  color: #666666;
+}
+.slider__name--active {
+  &::after {
+    border-top: rem(0px) solid red;
+    border-right: rem(4px) solid transparent;
+    border-bottom: rem(8px) solid red;
+    border-left: rem(4px) solid transparent;
+  }
+}

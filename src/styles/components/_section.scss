@@ -1,0 +1,22 @@
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: rem(101px);
+}
+.section__title {
+  font-weight: bold;
+  font-size: rem(48px);
+  line-height: rem(52px);
+  margin-bottom: rem(60px);
+  text-align: center;
+  text-transform: uppercase;
+
+  @include phones {
+    font-size: rem(32px);
+    line-height: rem(36px);
+    margin-bottom: rem(14px);
+    padding: 0 2%;
+  }
+}

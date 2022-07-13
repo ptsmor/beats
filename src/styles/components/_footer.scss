@@ -1,0 +1,151 @@
+.map-section {
+  overflow: hidden;
+  min-height: rem(738px);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  @include tablets {
+    min-height: rem(580px);
+  }
+
+  @include phones {
+    min-height: rem(450px);
+  }
+}
+.map__container {
+  margin: auto auto 0 auto;
+
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  background: #ffffff;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: rem(86px);
+    max-width: rem(1100px);
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+
+    @include tablets {
+      height: rem(107px);
+    }
+
+    @include phones {
+      flex-direction: column;
+      height: rem(151px);
+    }
+  }
+}
+
+.footer__col {
+  display: flex;
+  align-items: center;
+}
+.footer__col--align--right {
+  align-items: flex-end;
+}
+.map__contacts {
+  margin-left: rem(86px);
+  @include tablets {
+    margin-left: rem(30px);
+  }
+  @include phones {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+.contacts__desc {
+  font-size: rem(18px);
+  line-height: rem(24px);
+  text-align: end;
+  font-style: normal;
+  @include tablets {
+    white-space: nowrap;
+  }
+}
+.social__link {
+  display: block;
+  width: rem(30px);
+  height: rem(30px);
+  background: center center no-repeat;
+  &-elem {
+    width: rem(30px);
+    height: rem(30px);
+    fill: #b3b3b3;
+    &:hover {
+      fill: #000000;
+      transition: 0.3s;
+    }
+  }
+}
+.social__item {
+  margin-right: rem(10px);
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+.social__list {
+  margin-right: rem(54px);
+  display: flex;
+  align-items: center;
+
+  @include phones {
+    margin-right: 0;
+    padding-bottom: rem(31px);
+  }
+}
+.social__link--tel::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: rem(30px);
+  height: rem(30px);
+}
+.social__link--vk::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: rem(30px);
+  height: rem(30px);
+}
+
+.social__link--fb::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: rem(30px);
+  height: rem(30px);
+}
+
+.social__link--ins::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+
+  width: rem(30px);
+  height: rem(30px);
+}

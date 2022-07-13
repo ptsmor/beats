@@ -1,0 +1,19 @@
+.order-section {
+  background: url("../img/form-bg.png") center center no-repeat;
+  min-height: rem(650px);
+  @include tablets {
+    min-height: rem(860px);
+  }
+  @include phones {
+    min-height: rem(790px);
+  }
+  color: #fff;
+}
+.container--order {
+  @include tablets {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+}
