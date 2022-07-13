@@ -122,7 +122,7 @@
     min-height: rem(800px);
   }
   @include phones {
-    min-height: rem(850px);
+    min-height: auto;
   }
   &::before {
     content: url("../img/Ellipse1.png");

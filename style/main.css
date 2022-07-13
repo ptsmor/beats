@@ -918,7 +918,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .reviews__section {
-    min-height: 53.125rem;
+    min-height: auto;
   }
 }
 .reviews__section::before {
