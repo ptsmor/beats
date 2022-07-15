@@ -36,7 +36,7 @@ task('copy:html', () => {
 
 task('copy:img', () => {
   return src('src/img/*')
-  .pipe(dest('dist/img'));
+  .pipe(dest('docs/img'));
   // .pipe(reload({ stream: true}));
 });
 
@@ -56,7 +56,7 @@ task('styles', () => {
    .pipe(gulpif(env === 'prod', gcmq()))
    .pipe(gulpif(env === 'prod', cleanCSS()))
    .pipe(gulpif(env === 'dev', sourcemaps.write()))
-   .pipe(dest(DIST_PATH))
+   .pipe(dest(DIST_PATH, 'docs'))
    .pipe(reload({ stream: true }));
 });
  
@@ -74,7 +74,7 @@ task('scripts', () => {
    }))
    .pipe(uglify())
    .pipe(sourcemaps.write())
-   .pipe(dest('dist'))
+   .pipe(dest('docs'))
    .pipe(reload({ stream: true}));
 });
  
@@ -102,7 +102,7 @@ task('icons', () => {
 task('server', () => {
  browserSync.init({
      server: {
-         baseDir: "./dist"
+         baseDir: "./docs"
      },
      open: false
  });
@@ -119,7 +119,7 @@ task('watch', () => {
 task('default',
  series(
    'clean',
-   parallel('copy:html', 'styles', 'scripts', 'icons'),
+   parallel('copy:html', 'copy:img', 'styles', 'scripts', 'icons'),
    parallel('watch', 'server')
  )
 );

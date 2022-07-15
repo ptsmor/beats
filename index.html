@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -707,27 +708,36 @@
               <div class="player-section__container">
                   <div class="player">
                       <div class="player__wrapper">
-                          <div id="yt-player" class="player__elem"></div>
-                          <div class="player__splash">
+                         <video src="./img/Billi.mp4" id="player" poster="./img/poster7.png">
+                          <source src="./img/Billi.mp4" type="video/mp4">
+                         </video>
+                         <button class="video__player-img">
+                          <img src="./img/Vector77.png" alt="" class="play video__btn-img">
+                         </button>
                         </div>
                         
                           <div class="player__controls">
+                            <div class="player__btn-wrap">
                               <button class="player__start"></button>
+                            </div>
                               <div class="player__playback">
                                   <div class="player__playback-line">
-                                      <button class="player__playback-button"></button>
+                                      <input type="range" class="player__playback-button" id="durationLevel"></input>
                                   </div>
                               </div>
-                              <div class="player__volume-icon">
+                              <div class="player__volume-icon" id="sound">
                                   <svg class="player__volume--img" viewBox="0 0 14 17">
                                       <use xlink:href="./img/sprite.svg#volume7"></use>
                                   </svg>
                               </div>
                               <div class="player__volume">
                                   <div class="player__volume-bar">
-                                      <div class="player__volume-button"></div>
+                                      <input type="range" class="player__volume-button" id="micLevel"></input>
                                   </div>
                               </div>
+
+
+                              
                           </div>
 
                       </div>
