@@ -27,7 +27,7 @@ const resetActiveClassForItem = (items, itemEq, activeClass) => {
 
 const performTransition = (sectionEq) => {
 
-    if (inScroll) return;
+    if (inScroll || document.body.classList.contains('locked')) return;
 
     const transitionOver = 1000;
     const mouseInertiaOver = 300;
@@ -100,7 +100,7 @@ if (deltaY < 0) {
 $(window).on("keydown", (e) => {
 
     const tagName = e.target.tagName.toLowerCase();
-    const userTypingInInputs = tagName == "input" || tagName == "textarea";
+    const userTypingInInputs = tagName == "input" || tagName == "textarea" ;
     const scroller = viewportScroller();
 
     if(userTypingInInputs) return;
@@ -139,8 +139,12 @@ $("body").swipe( {
 
         if (direction == "up") scrollDirection = "next"; 
         if (direction == "down") scrollDirection = "prev"; 
-      
+
+
+      if (scrollDirection) {
         scroller[scrollDirection]();
+      }
+        
     }
   });
 }

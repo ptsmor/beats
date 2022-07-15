@@ -14,7 +14,7 @@ list.on("click", ".product", function (e) {
     newWidth = $(window).width() - curWidth;
   }
 
-  if ($(window).width() < 480) {
+  if ($(window).width() <= 480) {
     curWidth = $(".product__title").width();
     newWidth = $(window).width() - curWidth;
   }
