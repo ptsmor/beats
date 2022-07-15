@@ -143,8 +143,8 @@
       line-height: rem(32px);
     }
     @include phones {
-      font-size: 28px;
-      line-height: 32px;
+      font-size: rem(28px);
+      line-height: rem(32px);
     }
   }
 
@@ -172,8 +172,8 @@
   &__price {
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 60px;
+    font-size: rem(36px);
+    line-height: rem(60px);
     color: #151515;
     margin-right: rem(53px);
     margin-bottom: rem(10px);
@@ -190,16 +190,16 @@
 .description__title {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: rem(16px);
+  line-height: rem(19px);
   color: #666666;
 }
 
 .decsription__text {
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: rem(18px);
+  line-height: rem(21px);
   color: #000;
 }
 

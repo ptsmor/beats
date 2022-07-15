@@ -26,7 +26,8 @@ let toggleMenu = function(e) {
     button.classList.toggle('hamburger__container--active');
     hamburger.classList.toggle('hamburger--active')
     menu.classList.toggle('fullscreen-menu--open');
-    body.classList.toggle('body-active-menu');
+    // body.classList.toggle('body-active-menu');
+    body.classList.toggle('locked');
 }
 
 button.addEventListener('click', toggleMenu);   
