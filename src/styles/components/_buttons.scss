@@ -1,0 +1,34 @@
+.btn {
+  font-weight: bold;
+  font-size: rem(16px);
+  padding: rem(18px) rem(41px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  @include tablets {
+    padding: rem(21px) rem(41px);
+  }
+  @include phones {
+    padding: rem(21px) rem(36px);
+  }
+
+  &--red {
+    color: #ffffff;
+    background: #e01f3d;
+  }
+  &--transparent {
+    background: transparent;
+    color: #ffffff;
+    text-transform: none;
+    @include tablets {
+      color: #e01f3d;
+    }
+  }
+  &--big {
+    padding: rem(21px) rem(41px);
+  }
+}

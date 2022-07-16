@@ -1,0 +1,42 @@
+$containerWidth: 915px;
+$baseFontSize: 16px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+//colors
+$red: #e01f3d;
+//z-indexes
+$z-fixed-menu: 100;
+
+@import "./_media.scss";
+
+
+// setups
+@import "./layout.scss";
+
+// components
+@import "./components/_hero.scss";
+@import "./components/_header.scss";
+@import "./components/_hamburger.scss";
+@import "./components/_features.scss";
+@import "./components/_buttons.scss";
+@import "./components/_section.scss";
+@import "./components/_headline.scss";
+@import "./components/_benefits.scss";
+@import "./components/_reviews.scss";
+@import "./components/_order.scss";
+@import "./components/_form.scss";
+@import "./components/_radio.scss";
+@import "./components/_footer.scss";
+@import "./components/_fixed-menu.scss";
+@import "./components/_shops.scss";
+@import "./components/_team.scss";
+@import "./components/_products.scss";
+@import "./components/_video.scss";
+@import "./components/_modal.scss";
+
+
+
+

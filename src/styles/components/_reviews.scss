@@ -1,0 +1,142 @@
+.reviews__display {
+  background: #f8faf9;
+  padding: rem(42px);
+  margin-bottom: rem(10px);
+  overflow: hidden;
+  position: relative;
+  min-height: rem(348px);
+  &::before {
+    content: "";
+    display: block;
+    width: rem(83px);
+    height: rem(83px);
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-61px);
+  }
+  &-inner {
+    display: flex;
+
+    @include tablets {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  }
+}
+.reviews__item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  opacity: 0;
+}
+.reviews__item--active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.reviews__avatar {
+  width: rem(253px);
+  height: rem(264px);
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+  }
+  &-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.reviews__content {
+  flex: 1;
+  margin-left: rem(40px);
+  max-width: rem(460px);
+  padding-top: rem(32px);
+  @include tablets {
+    margin-left: 0;
+  }
+}
+.reviews__title {
+  font-weight: bold;
+  font-size: rem(24px);
+  line-height: rem(28px);
+  margin-bottom: rem(27px);
+}
+.reviews__text {
+  margin-bottom: rem(38px);
+}
+.reviews__autor {
+  font-weight: bold;
+  font-size: rem(18px);
+  line-height: rem(21px);
+}
+.interactive-avatar {
+  width: rem(86px);
+  height: rem(86px);
+  border: rem(6px) solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  &--active:hover {
+    border-color: #e01f3d;
+  }
+  &:hover {
+    border-color: #e01f3d;
+  }
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  &__icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.reviews__switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__section {
+  position: relative;
+  min-height: rem(700px);
+  @include tablets {
+    min-height: rem(800px);
+  }
+  @include phones {
+    min-height: auto;
+  }
+  &::before {
+    content: url("../img/Ellipse1.png");
+    z-index: 10;
+    position: absolute;
+    bottom: rem(-25px);
+    left: rem(80px);
+  }
+}
+.container--reviews {
+  @include tablets {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+}

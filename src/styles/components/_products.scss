@@ -1,0 +1,124 @@
+.products__section {
+  background: url("../img/products-bg5.png") top right -30% / cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  min-height: rem(400px);
+  @include tablets {
+    background: url("../img/products-bg5.png") center right / cover no-repeat;
+    min-height: rem(900px);
+  }
+  @include phones {
+    min-height: rem(750px);
+  }
+}
+
+.products__title {
+  position: absolute;
+  width: rem(170px);
+  height: rem(52px);
+  left: rem(84px);
+  top: rem(115px);
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 52px;
+  text-align: start;
+  color: #ffffff;
+
+  @include phones {
+    left: rem(20px);
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.products-menu__list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.product__content {
+  position: relative;
+  width: 0;
+  background: rgba(51, 53, 55, 0.9);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: width 0.7s;
+}
+
+.product {
+  display: flex;
+  position: relative;
+  &--silver {
+    .product__title {
+      background-color: #999999;
+    }
+  }
+  &--black {
+    .product__title {
+      background-color: #151515;
+    }
+  }
+  &--red {
+    .product__title {
+      background-color: $red;
+    }
+  }
+  &--active {
+    @include phones {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .product__content {
+      display: block;
+      width: 524px;
+      color: white;
+
+      .product__text {
+        opacity: 1;
+        transition: opacity 0.3s;
+        transition-delay: 0.5s;
+      }
+    }
+  }
+}
+
+.product__title {
+  width: rem(102px);
+  height: 100%;
+  position: relative;
+}
+
+.product__title--text {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: white;
+  white-space: nowrap;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+}
+
+.product__text {
+  padding: rem(31px) rem(38px);
+  opacity: 0;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
