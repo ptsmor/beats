@@ -35,7 +35,7 @@ task('copy:html', () => {
 
 
 task('copy:img', () => {
-  return src('src/img/*')
+  return src('src/img/**/*.*')
   .pipe(dest('docs/img'));
   // .pipe(reload({ stream: true}));
 });
