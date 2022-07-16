@@ -1,11 +1,11 @@
 .products__section {
-  background: url("../img/products-bg5.png") top right -30% / cover no-repeat;
+  background: url("./img/products-bg5.png") top right -30% / cover no-repeat;
   position: relative;
   display: flex;
   justify-content: flex-end;
   min-height: rem(400px);
   @include tablets {
-    background: url("../img/products-bg5.png") center right / cover no-repeat;
+    background: url("./img/products-bg5.png") center right / cover no-repeat;
     min-height: rem(900px);
   }
   @include phones {

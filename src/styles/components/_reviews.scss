@@ -125,7 +125,7 @@
     min-height: auto;
   }
   &::before {
-    content: url("../img/Ellipse1.png");
+    content: url("./img/Ellipse1.png");
     z-index: 10;
     position: absolute;
     bottom: rem(-25px);

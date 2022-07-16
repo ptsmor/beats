@@ -19,7 +19,7 @@
     .radio__visible {
       border-radius: rem(4px);
       &::before {
-        background: url("../img/Check.png") center center no-repeat;
+        background: url("./img/Check.png") center center no-repeat;
       }
     }
     @include tablets {

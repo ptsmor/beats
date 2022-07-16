@@ -15,7 +15,7 @@
   }
 
   &::before {
-    content: url("../img/Comb.png");
+    content: url("./img/Comb.png");
     position: absolute;
     top: rem(63px);
     right: 0;
@@ -90,7 +90,7 @@
     min-height: rem(950px);
   }
   &::before {
-    content: url("../img/Rectangle2.png");
+    content: url("./img/Rectangle2.png");
     position: absolute;
     bottom: rem(-16px);
     left: rem(60px);

@@ -6,7 +6,7 @@
     min-height: rem(450px);
   }
   &::after {
-    content: url("../img/Polygon7.png");
+    content: url("./img/Polygon7.png");
     position: absolute;
     bottom: rem(-30px);
     right: rem(88px);
@@ -220,7 +220,7 @@
 //   left: 0;
 //   right: 0;
 //   bottom: 0;
-//   background: url(../img/player7.png) center center/cover no-repeat;
+//   background: url(./img/player7.png) center center/cover no-repeat;
 //   cursor: pointer;
 // }
 
